@@ -1,0 +1,25 @@
+@import "src/styles/colors.scss";
+
+.dashboard {
+  &__body {
+    width: calc(100% - 5rem);
+    min-height: 100vh;
+    margin-left: 5rem;
+    z-index: 0;
+    position: relative;
+    top: 0;
+    transition: all 0.5s ease;
+    background: $white;
+    padding: 3rem;
+  }
+
+  &__body-trimmed {
+    width: calc(100% - 16.5625rem);
+    margin-left: 16.5625rem;
+  }
+
+  &__body-md-screen {
+    width: calc(100% - 5rem);
+    margin-left: 5rem;
+  }
+}
