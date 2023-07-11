@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { SideNavToggle } from '../shared/sidenav/nav-data';
+import { SideNavToggle } from '../../shared/sidenav/nav-data';
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss'],
+  selector: 'app-core',
+  templateUrl: './core.component.html',
+  styleUrls: ['./core.component.scss'],
 })
-export class DashboardComponent {
+export class CoreComponent {
   isSideNavCollapsed = false;
   screenWidth = 0;
 

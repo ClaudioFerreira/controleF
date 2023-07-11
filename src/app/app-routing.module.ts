@@ -8,9 +8,8 @@ const routes: Routes = [
       import('./login/login.module').then((m) => m.LoginModule),
   },
   {
-    path: 'dashboard',
-    loadChildren: () =>
-      import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
+    path: '',
+    loadChildren: () => import('./core/core.module').then((m) => m.CoredModule),
   },
 ];
 
