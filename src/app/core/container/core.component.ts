@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SideNavToggle } from '../../shared/sidenav/nav-data';
+import { SideNavToggle } from '../../shared/sidenav/nav-util';
 
 @Component({
   selector: 'app-core',
@@ -19,13 +19,13 @@ export class CoreComponent {
     let bodyStyleClass = '';
 
     if (this.isSideNavCollapsed && this.screenWidth > 768) {
-      bodyStyleClass = 'dashboard__body-trimmed';
+      bodyStyleClass = 'core__body-trimmed';
     } else if (
       this.isSideNavCollapsed &&
       this.screenWidth <= 768 &&
       this.screenWidth > 0
     ) {
-      bodyStyleClass = 'dashboard__body-md-screen';
+      bodyStyleClass = 'core__body-md-screen';
     }
     return bodyStyleClass;
   }

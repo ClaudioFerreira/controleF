@@ -12,7 +12,7 @@ import {
   transition,
   trigger,
 } from '@angular/animations';
-import { SideNavToggle, navbarData } from './nav-data';
+import { SideNavToggle, navbarData } from './nav-util';
 
 @Component({
   selector: 'app-sidenav',
@@ -48,13 +48,6 @@ import { SideNavToggle, navbarData } from './nav-data';
             style({ transform: 'rotate(0deg)', offset: '1' }),
           ])
         ),
-      ]),
-    ]),
-
-    trigger('select', [
-      transition(':enter', [
-        style({ margem: 0 }),
-        animate('20ms', style({ margin: '0.938rem 0.938rem 0 0.938rem' })),
       ]),
     ]),
   ],

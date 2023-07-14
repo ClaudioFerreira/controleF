@@ -10,9 +10,9 @@ interface navbarItem {
 }
 
 export const navbarData: navbarItem[] = [
-  { routerLink: '', icon: 'bx bxs-dashboard', label: 'Dashboard' },
+  { routerLink: '/dashboard', icon: 'bx bxs-dashboard', label: 'Dashboard' },
   {
-    routerLink: '/recorrentes',
+    routerLink: '/contas-recorrentes',
     icon: 'bx bx-money-withdraw',
     label: 'Contas Recorrentes',
   },

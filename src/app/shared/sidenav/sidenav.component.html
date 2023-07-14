@@ -16,7 +16,6 @@
     <li class="sidenav__nav__item" *ngFor="let item of navData">
       <a
         class="sidenav__nav__item--link"
-        @select
         [routerLink]="[item.routerLink]"
         routerLinkActive="active"
         [routerLinkActiveOptions]="{ exact: true }"

@@ -1,13 +1,5 @@
-<div class="dashboard__nav">
-  <app-sidenav (onToggleSideNav)="onToggleSideNav($event)"></app-sidenav>
-</div>
+<app-sidenav (onToggleSideNav)="onToggleSideNav($event)"></app-sidenav>
 
-<div class="dashboard__body" [ngClass]="getBodyClass()">
-  <h1>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa porro libero
-    est praesentium rerum ex nemo dignissimos maiores delectus, rem minus,
-    quidem, distinctio veritatis ratione accusantium natus eius eum repellendus!
-  </h1>
-
+<div class="core__body" [ngClass]="getBodyClass()">
   <router-outlet></router-outlet>
 </div>
