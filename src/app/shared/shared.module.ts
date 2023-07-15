@@ -4,11 +4,12 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
-  declarations: [SidenavComponent],
+  declarations: [SidenavComponent, CardComponent],
   imports: [CommonModule, RouterModule],
-  exports: [SidenavComponent],
+  exports: [SidenavComponent, CardComponent],
   providers: [BrowserModule, BrowserAnimationsModule],
 })
 export class SharedModule {}
